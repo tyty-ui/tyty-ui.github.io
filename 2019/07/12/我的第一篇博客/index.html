@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇博客 | 燕子的小窝</title>
+  <title>搭建blog | 燕子的小窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章内容">
+  <meta name="description" content="一、hexo常用命令hexo clean  #用来清理缓存文件  hexo g #生成文件  hexo s（start/server）  #启动博客  hexo n（new） &amp;quot;文件名&amp;quot;  #新建文章  hexo d  #上传到文件可以在VScode、记事本等里面编写">
 <meta name="keywords" content="github,hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客">
+<meta property="og:title" content="搭建blog">
 <meta property="og:url" content="http://yoursite.com/2019/07/12/我的第一篇博客/index.html">
 <meta property="og:site_name" content="燕子的小窝">
-<meta property="og:description" content="第一章内容">
+<meta property="og:description" content="一、hexo常用命令hexo clean  #用来清理缓存文件  hexo g #生成文件  hexo s（start/server）  #启动博客  hexo n（new） &amp;quot;文件名&amp;quot;  #新建文章  hexo d  #上传到文件可以在VScode、记事本等里面编写">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-13T11:27:18.455Z">
+<meta property="og:image" content="http://yoursite.com/img/1.png">
+<meta property="og:updated_time" content="2019-07-13T12:10:20.209Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客">
-<meta name="twitter:description" content="第一章内容">
+<meta name="twitter:title" content="搭建blog">
+<meta name="twitter:description" content="一、hexo常用命令hexo clean  #用来清理缓存文件  hexo g #生成文件  hexo s（start/server）  #启动博客  hexo n（new） &amp;quot;文件名&amp;quot;  #新建文章  hexo d  #上传到文件可以在VScode、记事本等里面编写">
+<meta name="twitter:image" content="http://yoursite.com/img/1.png">
   
     <link rel="alternative" href="/atom.xml" title="燕子的小窝" type="application/atom+xml">
   
@@ -166,7 +168,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客
+      搭建blog
     </h1>
   
 
@@ -179,12 +181,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+        <h2 id="一、hexo常用命令"><a href="#一、hexo常用命令" class="headerlink" title="一、hexo常用命令"></a>一、hexo常用命令</h2><pre><code>hexo clean  #用来清理缓存文件
+
+hexo g #生成文件
+
+hexo s（start/server）  #启动博客
+
+hexo n（new） &quot;文件名&quot;  #新建文章
+
+hexo d  #上传到文件</code></pre><p>可以在VScode、记事本等里面编写</p>
 <a id="more"></a>
 <hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
+<h2 id="二、dom常用命令"><a href="#二、dom常用命令" class="headerlink" title="二、dom常用命令"></a>二、dom常用命令</h2><p>1.dir #显示所有文件<br>2.cd #进入文件<br>3.cd .. #退一层</p>
 <hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>
+<h2 id="三、将博客部署到GitHub上"><a href="#三、将博客部署到GitHub上" class="headerlink" title="三、将博客部署到GitHub上"></a>三、将博客部署到GitHub上</h2><p>1、登录注册<br>2、用户部署个人博客的GitHub仓库（命名必须规范）<br> <img src="/img/1.png" alt="部署GitHub仓库"></p>
+<hr>
+<h2 id="四、编写blog的语法"><a href="#四、编写blog的语法" class="headerlink" title="四、编写blog的语法"></a>四、编写blog的语法</h2><p> <a href="https://www.jianshu.com/p/36d67d7d6985" target="_blank" rel="noopener">Markdown语法</a></p>
+<hr>
+<h2 id="五、处理文章设置折叠无效"><a href="#五、处理文章设置折叠无效" class="headerlink" title="五、处理文章设置折叠无效"></a>五、处理文章设置折叠无效</h2><p>•    问题 打开我们的博客主页，发现所有文章都是以全文开展的，这很不利于我们查看，所以我们就需要设置文章折叠起来，而作者给的设置 excerpt_link: more 并没有效果，<br>•    处理 在 MD 格式的文章正文中插入 &lt; !–more–&gt;(注意把我 ! 号前的一个空格去掉，这里他属于注释我不空一格的话他不显示的)，这样就只会显示它之前的，在此之后的所有内容都不会显示，只有点击文章标题或者是查看全文才可以看到剩下的内容。而后我们把themes\yilia_config.yml文件中的excerpt_link: more 给删掉就OK啦。</p>
+<hr>
+<h2 id="六、yilia主题表格的坑"><a href="#六、yilia主题表格的坑" class="headerlink" title="六、yilia主题表格的坑"></a>六、yilia主题表格的坑</h2><p>肯定要在表格的上下都插入一个空行！！！否则你的表格将不会正常显示出来！！！</p>
+
       
 
       
@@ -497,7 +514,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">夜是长的&lt;br&gt;&lt;br&gt;然而一下子天就亮了</div>
   	  	
     	</section>
     
