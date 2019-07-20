@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 语义化标签 | 燕子的小窝</title>
+  <title>06-CSS构造块 | 燕子的小窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="燕子的小窝">
-<meta property="og:url" content="http://yoursite.com/tags/语义化标签/index.html">
+  <meta name="description" content="CSS构造块一、构造样式的规则">
+<meta name="keywords" content="html5,CSS构造块">
+<meta property="og:type" content="article">
+<meta property="og:title" content="06-CSS构造块">
+<meta property="og:url" content="http://yoursite.com/2019/07/20/06-CSS构造块/index.html">
 <meta property="og:site_name" content="燕子的小窝">
+<meta property="og:description" content="CSS构造块一、构造样式的规则">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/img/4.png">
+<meta property="og:image" content="http://yoursite.com/img/5.png">
+<meta property="og:image" content="http://yoursite.com/img/6.png">
+<meta property="og:updated_time" content="2019-07-20T15:29:10.802Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="燕子的小窝">
+<meta name="twitter:title" content="06-CSS构造块">
+<meta name="twitter:description" content="CSS构造块一、构造样式的规则">
+<meta name="twitter:image" content="http://yoursite.com/img/4.png">
   
     <link rel="alternative" href="/atom.xml" title="燕子的小窝" type="application/atom+xml">
   
@@ -154,36 +163,280 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-06-CSS构造块" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/15/02-语义化标签的使用/" class="archive-article-date">
-  	<time datetime="2019-07-15T08:53:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/15/02-语义化标签的使用/">02-语义化标签的使用及兼容性处理</a>
+    <h1 class="article-title" itemprop="name">
+      06-CSS构造块
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/07/20/06-CSS构造块/" class="archive-article-date">
+  	<time datetime="2019-07-20T14:22:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS构造块"><a href="#CSS构造块" class="headerlink" title="CSS构造块"></a>CSS构造块</h1><h2 id="一、构造样式的规则"><a href="#一、构造样式的规则" class="headerlink" title="一、构造样式的规则"></a>一、构造样式的规则</h2><a id="more"></a>
+<p>主要部分：<br>选择器（selector）:决定哪些元素受到影响。<br>声明块(declaration block）：由一个或多个属性—值对组成，他们指定应该做什么。<br>例子：<br>样式规则:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: yellow;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Holle！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/4.png" alt="结果"></p>
+<hr>
+<h2 id="二、为样式规则添加注释"><a href="#二、为样式规则添加注释" class="headerlink" title="二、为样式规则添加注释"></a>二、为样式规则添加注释</h2><pre><code>/*注释*/</code></pre><p>提示：不能讲一个注释镶嵌到另一个注释里面。</p>
+<hr>
+<h2 id="三、理解继承"><a href="#三、理解继承" class="headerlink" title="三、理解继承"></a>三、理解继承</h2><p>对大多数属性来说，还可以使用inherit值强制进行继承<br>哪些属性会被继承<br><strong><font color="red">文本</font></strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>color</td>
+<td>颜色，a元素除外</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>方向</td>
+</tr>
+<tr>
+<td>font</td>
+<td>字体</td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>字体系列</td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>字体大小</td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>用于设置斜体</td>
+</tr>
+<tr>
+<td>font-variantn</td>
+<td>用于设置小型大写字符</td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>用于设置粗细</td>
+</tr>
+<tr>
+<td>letter-spacing</td>
+<td>字母间距</td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>行高</td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>用于设置对齐方式</td>
+</tr>
+<tr>
+<td>text-indent</td>
+<td>用于设置收尾缩行</td>
+</tr>
+<tr>
+<td>text-transform</td>
+<td>用于修改大小写</td>
+</tr>
+<tr>
+<td>visibility</td>
+<td>可见性</td>
+</tr>
+<tr>
+<td>white-space</td>
+<td>用于指定如何处理空格</td>
+</tr>
+<tr>
+<td>word-spacing</td>
+<td>字间距</td>
+</tr>
+</tbody></table>
+<p><strong><font color="red">列表</font></strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>list-style</td>
+<td>样式列表</td>
+</tr>
+<tr>
+<td>list-style-image</td>
+<td>用于为列表指定定制的标记</td>
+</tr>
+<tr>
+<td>list-style-position</td>
+<td>用于确定列表标记的位置</td>
+</tr>
+<tr>
+<td>list-style-type</td>
+<td>用于设置列表的标记</td>
+</tr>
+</tbody></table>
+<p><strong><font color="red">表格</font></strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>border-collapse</td>
+<td>用于控制表格相邻单元格的边框是否合并为单一边框</td>
+</tr>
+<tr>
+<td>border-spacing</td>
+<td>用于指定表格边框之间的空隙大小</td>
+</tr>
+<tr>
+<td>caption-side</td>
+<td>用于设置表格标题的位置</td>
+</tr>
+<tr>
+<td>empty-cells</td>
+<td>用于设置是否显示表格中的空单元格</td>
+</tr>
+</tbody></table>
+<p><strong><font color="red">页面设置(对于印刷物)</font></strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>orphans</td>
+<td>用于设置当元素内部发生分页时在页面底部需要保留的最少行数</td>
+</tr>
+<tr>
+<td>page-break-inside</td>
+<td>用于设置元素内部的分页方式</td>
+</tr>
+<tr>
+<td>widows</td>
+<td>用于设置当元素内部发生分页时在页面顶部需要保留的最少行数</td>
+</tr>
+</tbody></table>
+<p><strong><font color="red">其他</font></strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cursor</td>
+<td>鼠标指针</td>
+</tr>
+<tr>
+<td>quotes</td>
+<td>用于指定引号样式</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="四、层叠：当规则发生冲突时"><a href="#四、层叠：当规则发生冲突时" class="headerlink" title="四、层叠：当规则发生冲突时"></a>四、层叠：当规则发生冲突时</h2><p>例子：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.example</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.example</span><span class="selector-class">.example-2</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: magenta;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.example</span><span class="selector-class">.example-2</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>变成红色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"example"</span>&gt;</span>变成蓝色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"example example-2"</span>&gt;</span>有名字两个相同的样式，执行下面一个，绿色覆盖紫色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>CSS用层叠的原则来考虑特殊性、顺序、和重要性<br>1、特殊性<br>指定选择器的具体程度。<br>P{…}&lt;.someClass(…)&lt;.someClass.someOtherClass{…}&lt;#someID{…}<br>提示：建议在样式表中多使用类选择器，避免使用ID选择器。使用ID选择器通常会矫枉过正，降低了灵活度。</p>
+<p>2、顺序<br>挽出现的优先级高。</p>
+<p>3、重要性<br>可以声明一条特殊的规则覆盖整个系统中的规则，这条规则的重要程度要比其他所有规则高。也可以在某条声明的末尾加上！important（特殊情况下使用，一般不使用），比如</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.example</span><span class="selector-class">.example-2</span>&#123;</span><br><span class="line">    color: magenta;!important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="五、属性的值"><a href="#五、属性的值" class="headerlink" title="五、属性的值"></a>五、属性的值</h2><p>1、    inherit（IE8之前不支持）<br>对于任何属性，在希望它的值与父元素的设置值相同时使用。</p>
+<p>例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>变成红色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    <span class="attribute">border</span>: inherit;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> black solid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">150px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/5.png" alt="jieguo"></p>
+<p>2、    预定义的值<br>很多css属性只接受预定义的值，要准确输入这些值，而且不要加引号。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">border</span>: <span class="selector-tag">none</span>;<span class="comment">/*预设值*/</span></span><br></pre></td></tr></table></figure>
+
+<p>3、    长度和百分号<br>很多css属性的值是长度，所以的长度都必须包含数字和单位，并且它们之间没有空格。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">font-size</span>: <span class="selector-class">.8em</span>;<span class="comment">/*长度*/</span></span><br></pre></td></tr></table></figure>
+
+<p>em:相对于其他值。一个em的长度大约与对应元素的字号相同。<br>如</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*将元素的左外边距设为元素字号的两倍*/</span></span><br><span class="line"><span class="selector-tag">margin-left</span>: 2<span class="selector-tag">em</span>;</span><br></pre></td></tr></table></figure>
+
+<p>当em用于设置元素的font-size属性本身时，它的值继承自对应元素的父元素的字号）</p>
+<p>px:某种设备上的一个像素的大小不一定与另一种设备上的完全相等。</p>
+<p>Pt:磅。为打印准备的样式表中保留这个单位。</p>
+<p>百分数：相对于其他值的值。通常是相对于父元素的。</p>
+<p>4、纯数字<br>只有极少数的CSS属性接受不带单位的数字。<br>其中最常见的有：line-height,z-index,opacity</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*值将与字号相乘，得到行号*/</span></span><br><span class="line"><span class="selector-tag">line-height</span>: 1<span class="selector-class">.5</span>;<span class="comment">/*数字*/</span></span><br></pre></td></tr></table></figure>
+
+<p>5、URL<br>有的CSS属性允许开发人员指定另一个文件（尤其是图像）的URL。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background: url("../img/cat.png");</span><br></pre></td></tr></table></figure>
+
+<p>提示：文件名可以不加引号。</p>
+<p>6、CSS颜色<br>可以使用预定义颜色关键字或以十六进制（HEX）、RGB、HSL、RGBA、HSLA等格式表示的值中为CSS属性指定颜色。最后两种格式可以指定具有一定程度alpha透明度的颜色。</p>
+<p>7、RGB<br>可以通过指定红、绿、蓝的量来构建自己的颜色。<br>可以使用百分数、0~255之间的数字来指定这三种颜色的值。<br>首先定义红色，然后绿色，最后蓝色。<br>例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">color</span>: <span class="selector-tag">rgb</span>(234,4,12);</span><br></pre></td></tr></table></figure>
+
+<p>8、十六进制数（最常用）<br>将数字值转化为十六进制，然后合并在一起。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">color</span>:<span class="selector-id">#54342a</span>;</span><br></pre></td></tr></table></figure>
+
+<p>54红，34绿，2a蓝<br>如果由对重复的数字组成，如#22aa66,可以缩写成#2a6.</p>
+<p>9、更多CSS3提供的指定颜色的方式RGBA、HSLA、HSL<br>    RGBA<br>RGBA在RGB的基础上加了一个代表alpha(alpha transparency<br>)透明度的A。<br>可以在红、绿、蓝数值后面加上一个用以指定透明度的0到1之间的小数。<br>语法：property：rgba(red,green,blue,alpha transparency);<br>例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*0.7透明度*/</span></span><br><span class="line"><span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(123,45,67,0<span class="selector-class">.3</span>);</span><br></pre></td></tr></table></figure>
+
+<p>    HSLA、HSL<br>HSLA是除了RGBA以外设置透明度的另一种方式。设置透明度方式与RGBA一样。<br>HSL代表色相（hue）、饱和度（saturation）和亮度（lightness）。<br>取值范围：<br>色相（hue）：0 ~ 360<br>饱和度（saturation）：0 ~ 100%(0和360代表同一种颜色：红色)<br>亮度（lightness）：0~100%<br>HSL语法：<br>Property：hsl(hue, saturation, lightness)<br>HSLA语法：<br>Property：hsla(hue, saturation, lightness, alpha transparency)<br>代码：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type="text/css"&gt;</span><br><span class="line">        <span class="selector-tag">body</span>&#123;</span><br><span class="line">            <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">"../img/peri.jpg"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-tag">p</span>&#123;</span><br><span class="line">            <span class="attribute">background-color</span>: <span class="built_in">hsl</span>(95,100%,28%);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-class">.text1</span>&#123;</span><br><span class="line">            <span class="attribute">background</span>: <span class="built_in">hsla</span>(95,100%,28%,0.75);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-class">.text2</span>&#123;</span><br><span class="line">            <span class="attribute">background</span>: <span class="built_in">hsla</span>(95,100%,28%,0.4);</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;<span class="selector-tag">body</span>&gt;</span><br><span class="line">&lt;p&gt;这个背景的透明度为0&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p class="text1"&gt;这个背景的透明度为25%&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p class="text2"&gt;这个背景的透明度为60%&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/6.png" alt="jieguo"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -193,29 +446,112 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">语义化标签</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">兼容性</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CSS构造块</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/20/06-CSS构造块/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/07/20/05-链接/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">05-链接</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -238,9 +574,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
