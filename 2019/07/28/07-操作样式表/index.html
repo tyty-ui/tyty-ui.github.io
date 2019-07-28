@@ -6,23 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>04-图像 | 燕子的小窝</title>
+  <title>07-操作样式表 | 燕子的小窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、图像1、提供替代性文本alr属性">
-<meta name="keywords" content="html5,图像,为网站添加图标">
+  <meta name="description" content="方法：外部样式表（首选方法）、嵌入样式表和内联样式（最不可取的方法）。 1、创建外部样式表">
+<meta name="keywords" content="css3,样式表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="04-图像">
-<meta property="og:url" content="http://yoursite.com/2019/07/20/04-图像/index.html">
+<meta property="og:title" content="07-操作样式表">
+<meta property="og:url" content="http://yoursite.com/2019/07/28/07-操作样式表/index.html">
 <meta property="og:site_name" content="燕子的小窝">
-<meta property="og:description" content="一、图像1、提供替代性文本alr属性">
+<meta property="og:description" content="方法：外部样式表（首选方法）、嵌入样式表和内联样式（最不可取的方法）。 1、创建外部样式表">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/img/2.png">
-<meta property="og:image" content="http://yoursite.com/img/3.png">
-<meta property="og:updated_time" content="2019-07-20T14:41:32.992Z">
+<meta property="og:updated_time" content="2019-07-28T09:49:24.484Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="04-图像">
-<meta name="twitter:description" content="一、图像1、提供替代性文本alr属性">
-<meta name="twitter:image" content="http://yoursite.com/img/2.png">
+<meta name="twitter:title" content="07-操作样式表">
+<meta name="twitter:description" content="方法：外部样式表（首选方法）、嵌入样式表和内联样式（最不可取的方法）。 1、创建外部样式表">
   
     <link rel="alternative" href="/atom.xml" title="燕子的小窝" type="application/atom+xml">
   
@@ -162,50 +159,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-04-图像" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-07-操作样式表" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      04-图像
+      07-操作样式表
     </h1>
   
 
         
-        <a href="/2019/07/20/04-图像/" class="archive-article-date">
-  	<time datetime="2019-07-20T14:21:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-20</time>
+        <a href="/2019/07/28/07-操作样式表/" class="archive-article-date">
+  	<time datetime="2019-07-28T09:12:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、图像"><a href="#一、图像" class="headerlink" title="一、图像"></a>一、图像</h1><h2 id="1、提供替代性文本"><a href="#1、提供替代性文本" class="headerlink" title="1、提供替代性文本"></a>1、提供替代性文本</h2><p>alr属性</p>
-<a id="more"></a>
-<p>定义：可以为图像添加一段描述性文本。<br>例子：（图片不存在）</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"1.jpg"</span> <span class="attr">alt</span>=<span class="string">"描述性文本"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <p>方法：外部样式表（首选方法）、嵌入样式表和内联样式（最不可取的方法）。</p>
+<h2 id="1、创建外部样式表"><a href="#1、创建外部样式表" class="headerlink" title="1、创建外部样式表"></a>1、创建外部样式表</h2><a id="more"></a>
+<p>外部样式表非常适合给网站上的大多数页面或者所有页面设置一致的外观。</p>
+<h2 id="2、链接到外部样式表"><a href="#2、链接到外部样式表" class="headerlink" title="2、链接到外部样式表"></a>2、链接到外部样式表</h2><p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;url.css&quot;&gt;</code><br>优点：<br>1&gt;对外部样式表进行修改时，所有引用它的页面也会自动更新。<br>2&gt;一旦浏览器在某个页面加载了它，在随后浏览引用它的页面时，通常无需再向WEB服务器请求该文件。这样做可以加快对页面的加载。</p>
+<h2 id="3、创建嵌入样式表"><a href="#3、创建嵌入样式表" class="headerlink" title="3、创建嵌入样式表"></a>3、创建嵌入样式表</h2><p><code>&lt;style&gt;&lt;/style&gt;</code><br>在HTML页面的head部分创建一个style元素，其中包含了样式表。<br>结果与链接到外部样式表完全一样。区别在于，其他网页无法利用这个页面中定义的样式。<br>提示：HTML5之前的版本要求在style开始标签中包含属性type=”text/css”，不过HTML5没有要求。因此可以忽略。</p>
+<h2 id="4、应用内联样式"><a href="#4、应用内联样式" class="headerlink" title="4、应用内联样式"></a>4、应用内联样式</h2><p>特点：内联样式规则只影响单个元素。<br>步骤：在希望进行格式化的HTML元素的开始标签中，输入style=””（或者直接在虚元素的标签内输入，虚元素不需要结束标签）。</p>
+<h2 id="5、样式的层叠和顺序"><a href="#5、样式的层叠和顺序" class="headerlink" title="5、样式的层叠和顺序"></a>5、样式的层叠和顺序</h2><p>基本规则：在其他条件相同的情况下，越晚出现的样式优先级越高。<br>样式规则的优先级：<br>（1）嵌入样式表与任何链接的外部样式表之间的关系取决于它们在HTML中的相对位置。<br>（2）内联样式在歪脖样式表和嵌入样式表之后。顺序最靠后，优先级越高。<br>（3）关于相互冲突的样式的顺序对优先级的影响，有一种列外情况，就是标记<code>！important</code>的样式总是具有最高的优先级。不过，尽量避免使用。</p>
+<h2 id="6、使用与媒体相关的样式表"><a href="#6、使用与媒体相关的样式表" class="headerlink" title="6、使用与媒体相关的样式表"></a>6、使用与媒体相关的样式表</h2><p>样式表中的<code>@media</code>规则是指定其他媒体类型的另一种方式。<br>可以指定一个只用于特定输出的样式表，如只用于打印，或这用于在浏览器中查看屏幕。<br>1、在link或style元素的开始标签中添加<code>media=”output”</code>，其中output可以是print、screen或all（最常见的三种），多个值用逗号分开。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; media=&quot;screen&quot;/&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;print.css&quot; media=&quot;print&quot;/&gt;</span><br></pre></td></tr></table></figure>
 
-<p>结果：<br><img src="/img/2.png" alt="结果"><br><strong><font color="red">（IE11中的结果）</font></strong><br>注：在Firefox和Opera等其他浏览器中，替代文本是单独出现的，Chrome是图标加文本，Safari只有图标。</p>
-<hr>
-<h2 id="2、查看图像尺寸"><a href="#2、查看图像尺寸" class="headerlink" title="2、查看图像尺寸"></a>2、查看图像尺寸</h2><p>1、在浏览器中查看图像尺寸<br>2、在Photoshop中查看图像尺寸</p>
-<hr>
-<h2 id="3、在浏览器中改变图像的尺寸"><a href="#3、在浏览器中改变图像的尺寸" class="headerlink" title="3、在浏览器中改变图像的尺寸"></a>3、在浏览器中改变图像的尺寸</h2><p>1、在HTML中指定图像尺寸</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/cat.png"</span> <span class="attr">width</span>=<span class="string">"250"</span> <span class="attr">height</span>=<span class="string">"250"</span> <span class="attr">alt</span>=<span class="string">"描述性文本"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>2、在样式表中使用@media规则。不需要在link中指定媒体。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*针对所有媒体的样式*/</span></span><br><span class="line"><span class="selector-tag">img</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">4px</span> solid red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*打印样式表*/</span></span><br><span class="line">@<span class="keyword">media</span> print &#123;</span><br><span class="line">    <span class="selector-tag">img</span>&#123;</span><br><span class="line">        <span class="comment">/*不显示图像*/</span></span><br><span class="line">        <span class="attribute">display</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>在img标签中，用width，height指定图像的尺寸<br>注：长宽调整为原来的一半，由于图像的高度和宽度比例保持不变图像就不会失真。</p>
-<hr>
-<h2 id="4、为网站添加图标"><a href="#4、为网站添加图标" class="headerlink" title="4、为网站添加图标"></a>4、为网站添加图标</h2><p>1、首先使用工具生成网站favicon.ico图标，网上很多工具，推荐一个myico.cn</p>
-<p>方法一：直接将favicon.ico图片放入网站根目录即可</p>
-<p>方法二：在页面<head></head>标签里增加一段代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico图标地址"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico图标地址"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>例如：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"../blog.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"../blog.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>结果：<br><img src="/img/3.png" alt="结果"></p>
-<hr>
+<h2 id="7、查看他人的CSS样式"><a href="#7、查看他人的CSS样式" class="headerlink" title="7、查看他人的CSS样式"></a>7、查看他人的CSS样式</h2><p>使用浏览器开发者工具，可以快速查看页面的CSS。</p>
 
       
 
@@ -240,15 +227,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">css3</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">图像</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">为网站添加图标</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">样式表</a>
         		</li>
       		
 		</ul>
@@ -304,7 +287,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/20/04-图像/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/28/07-操作样式表/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -318,18 +301,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/20/05-链接/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/07/28/08-定义选择器/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          05-链接
+          08-定义选择器
         
       </div>
     </a>
   
   
-    <a href="/2019/07/15/03-表单/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">03-表单</div>
+    <a href="/2019/07/20/06-CSS构造块/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">06-CSS构造块</div>
       <i class="icon-circle-right"></i>
     </a>
   

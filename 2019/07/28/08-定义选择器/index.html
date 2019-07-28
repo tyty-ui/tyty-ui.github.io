@@ -6,23 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>04-图像 | 燕子的小窝</title>
+  <title>08-定义选择器 | 燕子的小窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、图像1、提供替代性文本alr属性">
-<meta name="keywords" content="html5,图像,为网站添加图标">
+  <meta name="description" content="css样式规则的两个主要部分：选择器：决定将格式化应用到哪些元素。">
+<meta name="keywords" content="css3,选择器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="04-图像">
-<meta property="og:url" content="http://yoursite.com/2019/07/20/04-图像/index.html">
+<meta property="og:title" content="08-定义选择器">
+<meta property="og:url" content="http://yoursite.com/2019/07/28/08-定义选择器/index.html">
 <meta property="og:site_name" content="燕子的小窝">
-<meta property="og:description" content="一、图像1、提供替代性文本alr属性">
+<meta property="og:description" content="css样式规则的两个主要部分：选择器：决定将格式化应用到哪些元素。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/img/2.png">
-<meta property="og:image" content="http://yoursite.com/img/3.png">
-<meta property="og:updated_time" content="2019-07-20T14:41:32.992Z">
+<meta property="og:image" content="http://yoursite.com/img/7.png">
+<meta property="og:image" content="http://yoursite.com/img/8.png">
+<meta property="og:image" content="http://yoursite.com/img/08-1.png">
+<meta property="og:image" content="http://yoursite.com/img/08-2.png">
+<meta property="og:image" content="http://yoursite.com/img/08-4.png">
+<meta property="og:image" content="http://yoursite.com/img/08-3.png">
+<meta property="og:image" content="http://yoursite.com/img/08-5.png">
+<meta property="og:updated_time" content="2019-07-28T10:48:57.574Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="04-图像">
-<meta name="twitter:description" content="一、图像1、提供替代性文本alr属性">
-<meta name="twitter:image" content="http://yoursite.com/img/2.png">
+<meta name="twitter:title" content="08-定义选择器">
+<meta name="twitter:description" content="css样式规则的两个主要部分：选择器：决定将格式化应用到哪些元素。">
+<meta name="twitter:image" content="http://yoursite.com/img/7.png">
   
     <link rel="alternative" href="/atom.xml" title="燕子的小窝" type="application/atom+xml">
   
@@ -162,50 +167,155 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-04-图像" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-08-定义选择器" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      04-图像
+      08-定义选择器
     </h1>
   
 
         
-        <a href="/2019/07/20/04-图像/" class="archive-article-date">
-  	<time datetime="2019-07-20T14:21:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-20</time>
+        <a href="/2019/07/28/08-定义选择器/" class="archive-article-date">
+  	<time datetime="2019-07-28T09:50:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、图像"><a href="#一、图像" class="headerlink" title="一、图像"></a>一、图像</h1><h2 id="1、提供替代性文本"><a href="#1、提供替代性文本" class="headerlink" title="1、提供替代性文本"></a>1、提供替代性文本</h2><p>alr属性</p>
+        <p>css样式规则的两个主要部分：<br>选择器：决定将格式化应用到哪些元素。</p>
 <a id="more"></a>
-<p>定义：可以为图像添加一段描述性文本。<br>例子：（图片不存在）</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"1.jpg"</span> <span class="attr">alt</span>=<span class="string">"描述性文本"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>声明：定义要应用的格式化。</p>
+<h2 id="1、构造选择器"><a href="#1、构造选择器" class="headerlink" title="1、构造选择器"></a>1、构造选择器</h2><p>选择器决定样式规则应用于哪些元素。<br>标准：<br>(1)、元素的类型或名称。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*要选择的元素的名称*/</span></span><br><span class="line"><span class="selector-tag">img</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">4px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>结果：<br><img src="/img/2.png" alt="结果"><br><strong><font color="red">（IE11中的结果）</font></strong><br>注：在Firefox和Opera等其他浏览器中，替代文本是单独出现的，Chrome是图标加文本，Safari只有图标。</p>
-<hr>
-<h2 id="2、查看图像尺寸"><a href="#2、查看图像尺寸" class="headerlink" title="2、查看图像尺寸"></a>2、查看图像尺寸</h2><p>1、在浏览器中查看图像尺寸<br>2、在Photoshop中查看图像尺寸</p>
-<hr>
-<h2 id="3、在浏览器中改变图像的尺寸"><a href="#3、在浏览器中改变图像的尺寸" class="headerlink" title="3、在浏览器中改变图像的尺寸"></a>3、在浏览器中改变图像的尺寸</h2><p>1、在HTML中指定图像尺寸</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/cat.png"</span> <span class="attr">width</span>=<span class="string">"250"</span> <span class="attr">height</span>=<span class="string">"250"</span> <span class="attr">alt</span>=<span class="string">"描述性文本"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>(2)、元素所在的上下文。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*h1中的em*/</span></span><br><span class="line"><span class="selector-tag">h1</span> <span class="selector-tag">em</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>在img标签中，用width，height指定图像的尺寸<br>注：长宽调整为原来的一半，由于图像的高度和宽度比例保持不变图像就不会失真。</p>
-<hr>
-<h2 id="4、为网站添加图标"><a href="#4、为网站添加图标" class="headerlink" title="4、为网站添加图标"></a>4、为网站添加图标</h2><p>1、首先使用工具生成网站favicon.ico图标，网上很多工具，推荐一个myico.cn</p>
-<p>方法一：直接将favicon.ico图片放入网站根目录即可</p>
-<p>方法二：在页面<head></head>标签里增加一段代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico图标地址"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico图标地址"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>(3)、元素的类或ID。（尽量不要使用ID选择器）<br>例1：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*类*/</span></span><br><span class="line"><span class="selector-class">.a1</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*ID*/</span></span><br><span class="line"><span class="selector-id">#b1</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>例如：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"../blog.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"../blog.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>例2：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*选择属于a1类的p元素（一般不使用这种方法）*/</span></span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.a1</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>结果：<br><img src="/img/3.png" alt="结果"></p>
-<hr>
+<p>(4)、元素的伪类或伪元素。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*选择属于link伪类的a元素*/</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(5)、元素是否有某些属性和值。<br>例1：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*title属性的a链接*/</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[title]</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例2：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*指向百度页面的a链接*/</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[href="http://www.baidu.com"]</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、按名称选择元素"><a href="#2、按名称选择元素" class="headerlink" title="2、按名称选择元素"></a>2、按名称选择元素</h2><p>lang属性：指明内容使用的是页面默认语言以外的另一种语言。<br>通配符（*）匹配代码中的任何元素。<br>可以在一个选择器中使用一组元素名称，名称之间用逗号分隔。</p>
+<h2 id="3、按类或ID选择元素"><a href="#3、按类或ID选择元素" class="headerlink" title="3、按类或ID选择元素"></a>3、按类或ID选择元素</h2><p>1、类选择器格式：<code>.classname{ }</code><br>2、id选择器格式：<code>#id{ }</code><br>提示：<br>（1）如果要定位的元素有多个类名，可以在选择器中将它们连在一起，如.classname1.classname2{}。<br>（2）每个ID都必须是唯一的。<br>类选择器与ID选择器的比较：<br>建议尽可以的使用类选择器，少使用或不使用ID选择器。主要是因为class选择器可以复用。而且ID选择器有以下两个问题：<br>1&gt;不能复用。<br>2&gt;特殊性比class选择器强得多。意味着如果要覆盖使用ID选择器定义的样式，就要编写特殊性更强的CSS规则。</p>
+<h2 id="4、按上下文选择元素"><a href="#4、按上下文选择元素" class="headerlink" title="4、按上下文选择元素"></a>4、按上下文选择元素</h2><p>在CSS中，可以根据元素的祖先、父元素或同胞元素来定位它们。<br>（1）祖先（ancestor）是包含目标元素（后代：descendant）的任何元素。<br>按祖先元素选择要格式化的元素格式：<code>ancestor descendant{  }</code><br>（2）父元素是直接包含另一个元素的元素，它们之间只相隔了一代，被包含的元素被称为子元素。<br>按父元素选择要格式化的元素格式：<code>parent&gt;child{   }</code><br>提示：通常最好保持较低的特殊性，让样式更易于复用。<br>（3）相邻同胞元素（adjacent sibling）：是直接相互毗邻的元素，即它们之间没有其他的同胞元素。<br>CSS相邻同胞结合符（adjacent sibling combinator）：可以选择直接跟在指定的同胞元素后面的同胞元素。<br>按相邻同胞元素选择要格式化的元素：<code>sibling+element{   }</code><br>(4)普通同胞结合符（general sibling combinator）：选择那些并非直接出现在另一同胞元素后面的同胞元素。<br><code>sibling~element{   }</code>(他们可以相邻，也可以不直接相邻。)</p>
+<h2 id="5、选择第一个或最后一个子元素"><a href="#5、选择第一个或最后一个子元素" class="headerlink" title="5、选择第一个或最后一个子元素"></a>5、选择第一个或最后一个子元素</h2><p>使用：<code>first-child</code>和<code>last-child</code>（IE9之前不支持）伪类<br>定义：选择某元素的第一个或最后一个子元素进行格式化。<br>提示：<br>在伪类之前添加其他的选择器可以使其特殊性更高。<br>ul是无序表。<br>代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>111<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>222<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>333<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:last-child</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: aquamarine;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/7.png" alt="结果"></p>
+<h2 id="6、选择元素的第一个字母或者一行"><a href="#6、选择元素的第一个字母或者一行" class="headerlink" title="6、选择元素的第一个字母或者一行"></a>6、选择元素的第一个字母或者一行</h2><p>使用：<code>:first-letter</code>（第一个字母）和<code>:first-line</code>（第一行）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>第一行<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    第二行</span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:first-letter</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h1</span><span class="selector-pseudo">:first-line</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: aquamarine;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/8.png" alt="结果"><br>提示：第一个字母前面的标点符号（如引号）会被当做第一个字母的一部分，一同被格式化。</p>
+<p>伪元素、伪类及CSS3语法<br>伪元素：是HTML中并不存在的元素。（本质上是<strong><font color="red"> 创建了一个虚拟容器</font></strong>（元素））<br>伪类：应用于<strong><font color="red">一组HTML元素</font></strong>，而你无需再HTML代码中标记它们。<br>伪类和伪元素的区别链接：<a href="https://www.jianshu.com/p/996d021bced3" target="_blank" rel="noopener">https://www.jianshu.com/p/996d021bced3</a></p>
+<h2 id="7、按状态选择链接元素"><a href="#7、按状态选择链接元素" class="headerlink" title="7、按状态选择链接元素"></a>7、按状态选择链接元素</h2><p>CSS允许根据链接的当前状态对它们进行格式化。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    百度链接<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://www.baidu.com"</span>&gt;</span>访问百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>未访问</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/08-1.png" alt="结果"></p>
+<blockquote>
+<p>访问过</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: aquamarine;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/08-2.png" alt="结果"></p>
+<blockquote>
+<p>链接获得焦点</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/08-4.png" alt="结果"></p>
+<blockquote>
+<p>停在链接上时</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/08-3.png" alt="结果"></p>
+<blockquote>
+<p>当访问者激活链接时</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br>点击的瞬间变为黄色。<br>提示：<br>1&gt;要对链接指定样式，不一定要指定伪类。但是，最好使用伪类区分不同的状态。<br>2&gt;由于链接可能出现多种状态，而且晚出现的规则会覆盖前面出现的规则。所以，一定要按下面的顺序定义：link、visited、focus、hover、active（LVHFA的顺序也是可行的）。</p>
+<h2 id="8、按属性选择元素"><a href="#8、按属性选择元素" class="headerlink" title="8、按属性选择元素"></a>8、按属性选择元素</h2><p>可以对具有给定属性或属性值的元素进行格式化。<br><strong><center>属性选择器参考表</center></strong></p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>属性值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[attribute]</td>
+<td>匹配指定属性，不论具体指是什么。</td>
+</tr>
+<tr>
+<td>[attribute=”value”]</td>
+<td>完全匹配指定属性值。</td>
+</tr>
+<tr>
+<td>[attribute~=”value”]</td>
+<td>属性值是以空格分隔的多个单词，其中有一个完全匹配指定值。</td>
+</tr>
+<tr>
+<td>[attribute&#124;=”value”]</td>
+<td>属性值以value-开头。</td>
+</tr>
+<tr>
+<td>[attribute^=”value”]</td>
+<td>属性值以value-开头，value为完整的单词或单词的一部分。</td>
+</tr>
+<tr>
+<td>[attribute$=”value”]</td>
+<td>属性值以value-结尾，value为完整的单词或单词的一部分。</td>
+</tr>
+<tr>
+<td>[attribute*=”value”]</td>
+<td>属性值为指定值的子字符串。</td>
+</tr>
+<tr>
+<td>## 9、指定元素组</td>
+<td></td>
+</tr>
+<tr>
+<td>可以列出任意数量的单独的选择器（无论它们包含的是元素名称、类还是伪元素），只需用逗号分隔它们即可。</td>
+<td></td>
+</tr>
+<tr>
+<td><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">article</span> <span class="attr">class</span>=<span class="string">"arch"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>aaaa<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>1111<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>2222<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>bbbb<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>3333<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>cccc<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>4444<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br></pre></td></tr></table></figure></td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>,</span><br><span class="line"><span class="selector-tag">h2</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><img src="/img/08-5.png" alt="jiehuo"></p>
+<p>提示：<br>1、不同的选择器不一定非得单独成行，但很多编码人员都遵循这种惯例，易于阅读。<br>2、有时，为应用于多个选择器的共同样式创建一个样式规则，再为没有共同点的样式分别创建单独的样式规则是很有用的。在样式表中后指定的规则会覆盖先指定的规则。</p>
+<h2 id="10、组合使用选择器"><a href="#10、组合使用选择器" class="headerlink" title="10、组合使用选择器"></a>10、组合使用选择器</h2><p>按特殊性由低到高排列的。<br>例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">em</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pro</span> <span class="selector-tag">em</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.arch</span> <span class="selector-class">.pro</span> <span class="selector-tag">em</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -240,15 +350,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">css3</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">图像</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">为网站添加图标</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">选择器</a>
         		</li>
       		
 		</ul>
@@ -304,7 +410,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/20/04-图像/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/28/08-定义选择器/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -318,18 +424,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/20/05-链接/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          05-链接
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/15/03-表单/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">03-表单</div>
+    <a href="/2019/07/28/07-操作样式表/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">07-操作样式表</div>
       <i class="icon-circle-right"></i>
     </a>
   
