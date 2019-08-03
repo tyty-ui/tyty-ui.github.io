@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/blog.ico?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/blog.ico?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    search: {
+      root: '/',
+      path: 'search.xml'
+    },
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta name="description" content="描述：使用css可以修改文本的字体、大小、粗细、倾斜、行高、前景和背景颜色、间距和对齐方式，可以决定是否为文本添加下划线或删除线，可以将文本转化为全部使用大写字母、全部使用小写字母或使用小型大写字母。而且，短短几行代码就可以让这些样式应用于整篇文档或整个网站。">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为文本添加样式">
+<meta property="og:url" content="http://yoursite.com/2019/08/03/为文本添加样式/index.html">
+<meta property="og:site_name" content="燕子的小窝">
+<meta property="og:description" content="描述：使用css可以修改文本的字体、大小、粗细、倾斜、行高、前景和背景颜色、间距和对齐方式，可以决定是否为文本添加下划线或删除线，可以将文本转化为全部使用大写字母、全部使用小写字母或使用小型大写字母。而且，短短几行代码就可以让这些样式应用于整篇文档或整个网站。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/img/1.png">
+<meta property="og:updated_time" content="2019-08-03T13:05:36.462Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="为文本添加样式">
+<meta name="twitter:description" content="描述：使用css可以修改文本的字体、大小、粗细、倾斜、行高、前景和背景颜色、间距和对齐方式，可以决定是否为文本添加下划线或删除线，可以将文本转化为全部使用大写字母、全部使用小写字母或使用小型大写字母。而且，短短几行代码就可以让这些样式应用于整篇文档或整个网站。">
+<meta name="twitter:image" content="http://yoursite.com/img/1.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="燕子的小窝" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/2019/08/03/为文本添加样式/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  
+  <title>为文本添加样式 | 燕子的小窝</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">燕子的小窝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">世界不会辜负一个努力的人，但也绝不会和一个假装努力的人逢场做戏。</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/03/为文本添加样式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="燕子">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="燕子的小窝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">为文本添加样式
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-03 19:44:37 / 修改时间：21:05:36" itemprop="dateCreated datePublished" datetime="2019-08-03T19:44:37+08:00">2019-08-03</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/css/" itemprop="url" rel="index"><span itemprop="name">css</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          <br>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span title="本文字数">6.3k</span>
+            </span>
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span title="阅读时长">6 分钟</span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<blockquote>
+<p>描述：使用css可以修改文本的字体、大小、粗细、倾斜、行高、前景和背景颜色、间距和对齐方式，可以决定是否为文本添加下划线或删除线，可以将文本转化为全部使用大写字母、全部使用小写字母或使用小型大写字母。而且，短短几行代码就可以让这些样式应用于整篇文档或整个网站。</p>
+</blockquote>
+<a id="more"></a>
+
+<hr>
+<h1 id="选择字体系列"><a href="#选择字体系列" class="headerlink" title="选择字体系列"></a><u>选择字体系列</u></h1><p>如何定义单个字体？</p>
+<h2 id="设置字体的方法"><a href="#设置字体的方法" class="headerlink" title="设置字体的方法"></a>设置字体的方法</h2><pre><code>font-family:name;</code></pre><p><code>font-family</code>属性是继承的，但是有几个元素不会继承元素的字体设置，其中有表单的<code>select</code>、<code>textarea</code>和<code>input</code>元素。不过，可以强制它们继承父元素的字体设置，代码为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">input，select，textarea&#123;</span><br><span class="line">font-family:inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：如果选择了访问者系统中没有的字体，他们的浏览器中就会显示默认字体。（Windows中的默认字体是Times New Roman）</p>
+<hr>
+<h1 id="指定替代字体"><a href="#指定替代字体" class="headerlink" title="指定替代字体"></a><u>指定替代字体</u></h1><p>有些字体不一定在每个系统上都能够显示出来，所以我们需要替代字体，来替代不能显示的字体，因此，我们可以在<code>font-family</code>属性中列举一种以上的字体。例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: Verdana, Geneva, Tahoma, sans-serif</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果系统上没有第一种字体，就用第二种字体，没有第一种和第二种字体就用第三种字体…这样往下替换。</p>
+<p>目标：指定尽可能接近的字体。</p>
+<p>字体列表称为字体栈。通常字体栈至少包括三个字体：希望使用的字体，一个或几个替代字体，以及一个表示类属性的标准字体（如果其他的字体都不可用，就用这个）。</p>
+<p>系统通常都具有下列表示类属的字体名称对应的字体：<code>serif、sans-serif、cursive、fantasy和monospace</code>。</p>
+<hr>
+<h1 id="创建斜体"><a href="#创建斜体" class="headerlink" title="创建斜体"></a><u>创建斜体</u></h1><p>浏览器通常让一些HTML元素（如cite、em和i）默认以斜体显示，因此，不必在CSS中对这些元素设置斜体。</p>
+<p>在CSS中<code>font-style</code>属性可以让任何元素中的文本以斜体显示。</p>
+<h2 id="创建斜体-1"><a href="#创建斜体-1" class="headerlink" title="创建斜体"></a>创建斜体</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 创建斜体文本 */</span></span><br><span class="line">    <span class="selector-tag">font-style</span>: <span class="selector-tag">italic</span>;</span><br><span class="line">    <span class="comment">/*创建倾斜文本*/</span></span><br><span class="line">    <span class="selector-tag">font-style</span>: <span class="selector-tag">oblique</span>;</span><br></pre></td></tr></table></figure>
+
+<p>注意：99%的情况下都选择<code>italic</code>。所有情况下，都很难察觉到使用<code>italic</code>和<code>oblique</code>的差异。</p>
+<h2 id="取消斜体"><a href="#取消斜体" class="headerlink" title="取消斜体"></a>取消斜体</h2><pre><code>font-style: normal;</code></pre><hr>
+<h1 id="应用粗体格式"><a href="#应用粗体格式" class="headerlink" title="应用粗体格式"></a><u>应用粗体格式</u></h1><p>粗体格式可能是让文本突出显示的最常见、最有效的方法。</p>
+<h2 id="应用粗体格式-1"><a href="#应用粗体格式-1" class="headerlink" title="应用粗体格式"></a>应用粗体格式</h2><p>浏览器通常默认为h1~h2添加粗体格式。</p>
+<p>CSS中添加粗体和取消粗体使用<code>font-weight</code>属性：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*粗体*/</span></span><br><span class="line">    <span class="comment">/*方法一*/</span></span><br><span class="line">    <span class="comment">/*让文本显示为具有平均加粗值的粗体，适用于大多数情况*/</span></span><br><span class="line">    <span class="selector-tag">font-weight</span>: <span class="selector-tag">bold</span>;</span><br><span class="line">    <span class="comment">/*方法二*/</span></span><br><span class="line">    <span class="comment">/*输入100~900之间的100的倍数，400代表正常粗细，700代表粗体*/</span></span><br><span class="line">    <span class="selector-tag">font-weight</span>: 700;</span><br><span class="line">    <span class="comment">/*方法三*/</span></span><br><span class="line">    <span class="comment">/*bolder:更粗，lighter：更粗。设置相对当前粗细的值*/</span></span><br><span class="line">    <span class="selector-tag">font-weight</span>: <span class="selector-tag">bolder</span>;</span><br><span class="line">    <span class="selector-tag">font-weight</span>: <span class="selector-tag">lighter</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="取消粗体"><a href="#取消粗体" class="headerlink" title="取消粗体"></a>取消粗体</h2><pre><code>font-weight: normal;</code></pre><p>注意：</p>
+<ol>
+<li><p>有些<code>web字体服务</code>，如Google Fonts,要求使用<code>font-weight: 400</code>;</p>
+</li>
+<li><p>有的字体没有设计粗体字母。对于这种字体，如果声明font-weight: bold;，浏览器会显示伪粗体。</p>
+</li>
+<li><p>任何自动添加了粗体格式的元素（strong、h1~h2和b），以及继承了父元素粗体格式的元素是有可能需要取消粗体的。</p>
+</li>
+<li><p><code>font-weight</code>是继承的。</p>
+</li>
+</ol>
+<hr>
+<h1 id="设置字体的大小"><a href="#设置字体的大小" class="headerlink" title="设置字体的大小"></a><u>设置字体的大小</u></h1><p>为网页的文本设置字体大小有两种方式：</p>
+<p>方法一：直接使用像素</p>
+<pre><code>font-size: 75px;</code></pre><p>方法二：使用百分号、em或者rem指定相对父元素文本的大小。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">font-size: 100%;/*16px*/</span><br><span class="line">    font-size: 2em;/*(16*2)px建议使用这个*/</span><br><span class="line">    font-size: 2rem;</span><br></pre></td></tr></table></figure>
+
+<h2 id="理解em和百分数字体大小"><a href="#理解em和百分数字体大小" class="headerlink" title="理解em和百分数字体大小"></a>理解em和百分数字体大小</h2><p>说明:使用这种方法时，最好在body上建立一个基准。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    font-size: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>即大多数系统的默认字体大小。</p>
+<p>确定em的值或（百分比）：</p>
+<p>要指定的字体大小/父元素的字体大小=值</p>
+<p>注意：</p>
+<ol>
+<li><p>1em应该始终等于父元素的字体大小。</p>
+</li>
+<li><p>在大多数情况下，100%的body font-size等于16px。不过有一种例外，就是用户对浏览器的设置覆盖了该默认值。</p>
+</li>
+</ol>
+<h2 id="使用rem设置字体大小"><a href="#使用rem设置字体大小" class="headerlink" title="使用rem设置字体大小"></a>使用rem设置字体大小</h2><p>以根元素为参照物设置其他元素的字体大小。例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">100%</span>;<span class="comment">/*通常是16px*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">intro</span> <span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">17px</span>;<span class="comment">/*可选*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.0625rem</span>;<span class="comment">/*17px/16px*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">intro</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1px</span>;<span class="comment">/*可选*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1rem</span>;<span class="comment">/*是0,941176em*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>根元素是html元素，简化了字体大小的设置，因为html元素的字体大小通常不会变。</p>
+<p>注意：IE9才开始支持它。</p>
+<hr>
+<h1 id="指定行高"><a href="#指定行高" class="headerlink" title="指定行高"></a><u>指定行高</u></h1><p>行高指的是段落的行距，即段落内每行之间的距离。</p>
+<h2 id="设置行高的步骤："><a href="#设置行高的步骤：" class="headerlink" title="设置行高的步骤："></a>设置行高的步骤：</h2><p>方法一：输入n,n是一个数字，它与元素的字体大小相乘，得到行高。(最常用的方法)</p>
+<pre><code>line-height: n;</code></pre><p>方法二：输入a，a是以em、像素或磅（打印中使用）为单位的值。</p>
+<pre><code>line-height: a;</code></pre><p>方法三：输入p%，字体大小的百分比。</p>
+<pre><code>ine-height: p%;</code></pre><p>注意：</p>
+<ol>
+<li><p>如果使用数字设定行高，那么所有子元素都会继承这个因子。如果父元素是16px,行高为1.5则，该元素的行高就是24px(1.5*16),如果子元素的字体大小为10px,则子元素的行高为15px(10*1.5)。</p>
+</li>
+<li><p>如果使用百分数或em值，那么只会继承产生的行高（即计算出来的值）。如果父元素是16px,行高为1.5则，该元素的行高就是24px，不管子元素的行高是多少，行高都是24px。</p>
+</li>
+</ol>
+<hr>
+<h1 id="同时设置所有字体值"><a href="#同时设置所有字体值" class="headerlink" title="同时设置所有字体值"></a><u>同时设置所有字体值</u></h1><p>可以使用font简写属性同时设置字体样式、粗细、变体、大小、行高和字体系列。</p>
+<p>使用font简写属性不要求指定所有字体属性，但至少应该包含字体大小和字体系列属性。</p>
+<p>例1：</p>
+<pre><code>font: 100% Geneva, Tahoma, sans-serif;</code></pre><p>例2：这个例子包含了所有可能的属性。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*字型 粗细 取消或设置小型大写字母 字体大小/行高 字体系列（逗号分隔）*/</span></span><br><span class="line"><span class="selector-class">.example</span>&#123;</span><br><span class="line">    <span class="attribute">font</span>: italic small-caps bold .<span class="number">875em</span>/<span class="number">1.3</span> <span class="string">"Palation Linotype"</span>, Palation, serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ol>
+<li>必须始终显式的声明字体大小和字体系列属性：先是字体大小，再是字体系列。</li>
+<li>行高是可选项，如果要出现，必须紧跟在字体大小和斜杠后面。</li>
+<li>字型、粗细、取消或设置小型大写字母的属性是可以按任意顺序排列，也可以忽略，如果忽略，就自动设置为normal。</li>
+</ol>
+<hr>
+<h1 id="设置颜色"><a href="#设置颜色" class="headerlink" title="设置颜色"></a><u>设置颜色</u></h1><p>可以修改网页中文本的颜色。</p>
+<p>样式表可以包含颜色名称、十六进制、RGB、HSL、RGBA和HSLA值的任意组合来定义颜色。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*输入颜色名称*/</span></span><br><span class="line">    <span class="selector-tag">color</span>: <span class="selector-tag">red</span>;</span><br><span class="line">    <span class="comment">/*十六进制:#rrggbb*/</span></span><br><span class="line">    <span class="selector-tag">color</span>: <span class="selector-id">#aa11bb</span>;<span class="comment">/*可简写为#a1b*/</span></span><br><span class="line">    <span class="comment">/*rgb(r,g,b):r,g,b为0~255之间的整数*/</span></span><br><span class="line">    <span class="selector-tag">color</span>: 255,182,193;</span><br><span class="line">    <span class="comment">/*rgb(r%,g%,b%):红、绿、蓝的百分数*/</span></span><br><span class="line">    <span class="selector-tag">color</span>: 45%,34%,56%;</span><br><span class="line">    <span class="comment">/*hsl(h,s,l):h是0~360之间的数值,色相；s和l是百分数，表示饱和度和亮度*/</span></span><br><span class="line">    <span class="selector-tag">color</span>: 90,34%,78%;</span><br><span class="line">    <span class="comment">/*rgba(r,g,b,a):a表示透明度,0~1之间的小数*/</span></span><br><span class="line">    <span class="selector-tag">color</span>: 255,182,193,0<span class="selector-class">.5</span>;</span><br><span class="line">    <span class="comment">/*hsla(h,s,l,a)*/</span></span><br><span class="line">    <span class="selector-tag">color</span>: 90,34%,78%,0,3;</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ol>
+<li>IE9之前不支持HSL、RGAB和HSLA。</li>
+<li>除了link元素，其他元素都会继承body元素中的color属性。开发人员必须显式设置link元素的color属性。</li>
+</ol>
+<hr>
+<h1 id="设置背景"><a href="#设置背景" class="headerlink" title="设置背景"></a><u>设置背景</u></h1><p>几乎可以对所有元素应用背景样式。</p>
+<h2 id="修改文本的背景颜色"><a href="#修改文本的背景颜色" class="headerlink" title="修改文本的背景颜色"></a>修改文本的背景颜色</h2><p> transparent：表示允许透过父元素的背景颜色</p>
+<pre><code>background-color: transparent;/*（或color）*/</code></pre><h2 id="使用背景图像作为背景"><a href="#使用背景图像作为背景" class="headerlink" title="使用背景图像作为背景"></a>使用背景图像作为背景</h2><p>none:不使用图片。</p>
+<pre><code>background-image: none;/*或者url(image.png)*/</code></pre><h2 id="重复背景图像"><a href="#重复背景图像" class="headerlink" title="重复背景图像"></a>重复背景图像</h2><p>direction:可以取四个值，repeat、repeat-x、repeat-y、no-repeat,分别代表同时横向和纵向重复图像、只横向重复图像、只纵向重复图像、不重复图像。</p>
+<p>忽略background-repeat，相当于默认为repeat。</p>
+<pre><code>background-repeat: direction;</code></pre><h2 id="控制背景图像是否随页面滚动"><a href="#控制背景图像是否随页面滚动" class="headerlink" title="控制背景图像是否随页面滚动"></a>控制背景图像是否随页面滚动</h2><p>fixed：背景图像会附着在浏览器窗口上（即使访问者滚动页面，图像任会继续显示，背景图像固定不动）。</p>
+<p>scroll：访问者滚动页面时背景图像会移动，相对于元素固定。</p>
+<p>local：只有访问者滚动背景图像所在的元素（而不是整个页面）时，背景图像才移动。相对于元素内容固定。</p>
+<p>scroll和local的区别：对于可以滚动的元素（设置为overflow:scroll的元素）, 当background-attachment设置为scroll时，背景图不会随元素内容的滚动而滚动。设置为local时，则背景会随内容的滚动而滚动。</p>
+<p>系统默认为scroll。</p>
+<pre><code>background-attachment: scroll;</code></pre><h2 id="指定元素背景图像的位置"><a href="#指定元素背景图像的位置" class="headerlink" title="指定元素背景图像的位置"></a>指定元素背景图像的位置</h2><p>x和y表示为距离左上角的绝对距离或百分数，如下面例子所示。<br>也可以用left、center、right表示x，用top，center、bottom表示y。</p>
+<p>如果两个值都用关键字表示，那么顺序无关紧要。</p>
+<pre><code>background-position:20px 147px;</code></pre><p>注意：可以在<code>background-position</code>属性中使用<code>负数</code>，使用负数的部分显示不出来。</p>
+<h2 id="在一条声明中设置所有背景属性"><a href="#在一条声明中设置所有背景属性" class="headerlink" title="在一条声明中设置所有背景属性"></a>在一条声明中设置所有背景属性</h2><p>可接受任何<code>background</code>的值，值的排列顺序没有要求</p>
+<pre><code>background:( );</code></pre><p>注意：在简记法中，任何没有指定的属性都将设置为默认值，这有可能会覆盖先前定义的样式。</p>
+<hr>
+<h1 id="控制间距"><a href="#控制间距" class="headerlink" title="控制间距"></a><u>控制间距</u></h1><p>可以增加或减少单词之间或字母之间的距离，前者称为字间距（tracking），后者称为字偶距（kerning）。</p>
+<h2 id="指定字间距"><a href="#指定字间距" class="headerlink" title="指定字间距"></a>指定字间距</h2><pre><code>word-spacing: length;</code></pre><h2 id="指定字偶距"><a href="#指定字偶距" class="headerlink" title="指定字偶距"></a>指定字偶距</h2><pre><code>letter-spacing: length;</code></pre><p>length：一个带单位的数字，如0.4em或5px.</p>
+<p>注意：</p>
+<ol>
+<li>都可以使用负数。</li>
+<li>值可能会受到字体系列或所选的对齐方式影响。</li>
+<li>如果使用em值，那么只有结果大小会被继承。例如父元素字体大小为16px,额外的单词间距为0.1em，则每个单词的额外间距也有1.6px,同时，所有子元素的额外间距也是1.6px。如果要覆盖继承的值，可以显式的为子元素设置间距。</li>
+</ol>
+<hr>
+<h1 id="增加缩进"><a href="#增加缩进" class="headerlink" title="增加缩进"></a><u>增加缩进</u></h1><p><code>text-indent:</code>可以指定段落第一行前面应该空出多大的空间。</p>
+<h2 id="增加缩进的方法"><a href="#增加缩进的方法" class="headerlink" title="增加缩进的方法"></a>增加缩进的方法</h2><pre><code>text-indent:length;</code></pre><p>length：一个带单位的数字，如0.4em或5px.</p>
+<p>注意：</p>
+<ol>
+<li>可以为其他元素应用text-indent属性，而不仅是段落元素。但默认情况下对em、strong、cite等内联元素没有效果。可以将它们设置为display：block；或display：inline-block;，就可以强制为其应用text-indent属性。</li>
+<li>使用负数会产生悬挂缩进。使用悬挂缩进，可能需要增加文字框周围的内边距或外边距。</li>
+<li>text-indent属性是继承的。</li>
+<li>如果要使用百分数或者em，那么只有生成的值的大小会被继承。</li>
+<li>要忽略继承的缩进，用0。</li>
+</ol>
+<hr>
+<h1 id="对齐文本"><a href="#对齐文本" class="headerlink" title="对齐文本"></a><u>对齐文本</u></h1><pre><code>text-align: 让文本对齐。
+left：让文本左对齐。
+right：让文本右对齐。
+center：让文本居中。
+justify：让文本两端对齐。</code></pre><p>注意：</p>
+<ol>
+<li>如果选择两端对齐，要注意单词间距和字母间距有可能受到严重的影响。</li>
+<li>适用于盒模型的元素（如p,h1~h6等，单独成行的），但对短语内容元素（如em、strong、cite等，显示在行内的）不起作用，除非将它们改成块级。</li>
+</ol>
+<hr>
+<h1 id="修改文本的大小写"><a href="#修改文本的大小写" class="headerlink" title="修改文本的大小写"></a><u>修改文本的大小写</u></h1><p>text-transform:可以为样式定义文本的大小写。</p>
+<pre><code>capitalize：每个单词的首字母大写。
+uppercase:所有字母大写。
+lowercase：所有字母小写。
+none：让文本保持原来的样子（可以用来取消继承的值）。</code></pre><hr>
+<h1 id="使用小型大写字母"><a href="#使用小型大写字母" class="headerlink" title="使用小型大写字母"></a><u>使用小型大写字母</u></h1><p>很多字体都有对应的小型大写字母变体，其中一些字母是大写的，但是缩小到了小写字母的大小。</p>
+<p>font-variant:调用小型大写字母变体。</p>
+<h2 id="使用小型大写字母的方法"><a href="#使用小型大写字母的方法" class="headerlink" title="使用小型大写字母的方法"></a>使用小型大写字母的方法</h2><pre><code>font-variant: small-caps;</code></pre><p>例：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    Park Guell</span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Park Guell<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">'Gill Sans'</span>, <span class="string">'Gill Sans MT'</span>, Calibri, <span class="string">'Trebuchet MS'</span>, sans-serif;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">font-variant</span>: small-caps; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/1.png" alt="结果"></p>
+<h2 id="取消小型大写字母的方法"><a href="#取消小型大写字母的方法" class="headerlink" title="取消小型大写字母的方法"></a>取消小型大写字母的方法</h2><pre><code>font-variant:none;</code></pre><p>注意：</p>
+<ol>
+<li>并非所有的字体都有对应的小型大写字母设计。</li>
+<li>小型大写字母在不同浏览器的效果稍有不同。</li>
+</ol>
+<hr>
+<h1 id="装饰文本"><a href="#装饰文本" class="headerlink" title="装饰文本"></a><u>装饰文本</u></h1><p>text-decoration:装饰文本，如添加下划线或者其他类型的线条。</p>
+<h2 id="值"><a href="#值" class="headerlink" title="值"></a>值</h2><pre><code>underline：    添加下划线。
+overline：     添加上划线。
+line-through:  添加删除线。
+none:          取消文本装饰。</code></pre><p>注意：</p>
+<ol>
+<li>除了a元素以外，可以为其他元素应用text-decoration属性。</li>
+<li>对于正常情况下有装饰的元素（如a、del、ins）以及从父元素继承了装饰样式的元素，可以取消它们的装饰。</li>
+</ol>
+<hr>
+<h1 id="设置空白属性"><a href="#设置空白属性" class="headerlink" title="设置空白属性"></a><u>设置空白属性</u></h1><p>默认情况下，HTML文档里的多个空格和回车会显示为一个空格，或者被忽略。</p>
+<p>white-space:让浏览器显示这些额外的空格。</p>
+<h2 id="值-1"><a href="#值-1" class="headerlink" title="值"></a>值</h2><pre><code>per:显示所有空格和回车。
+nowrap:文本全部显示在一行。（可以用br元素手动创建换行，但是避免使用br,因为这样做会在HTML中混合表现，而不是让CSS控制它）
+normal:正常方式处理空格。</code></pre>
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>要不要鼓励一下！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechat.PNG" alt="燕子 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.PNG" alt="燕子 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>燕子</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://yoursite.com/2019/08/03/为文本添加样式/" title="为文本添加样式">http://yoursite.com/2019/08/03/为文本添加样式/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/cc by-nc-sa 3.0/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"># css</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/29/Hello World/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+  
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NTcxOS8yMjIzMA=="></div>
+  </div>
+  
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" src="/images/timg.jpg" alt="燕子">
+  
+  <p class="site-author-name" itemprop="name">燕子</p>
+  <div class="site-description motion-element" itemprop="description"></div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/tyty-ui" title="GitHub &rarr; https://github.com/tyty-ui" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://weibo.com/u/2747740891" title="Weibo &rarr; https://weibo.com/u/2747740891" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
+
+          
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#选择字体系列"><span class="nav-number">1.</span> <span class="nav-text">选择字体系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置字体的方法"><span class="nav-number">1.1.</span> <span class="nav-text">设置字体的方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指定替代字体"><span class="nav-number">2.</span> <span class="nav-text">指定替代字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建斜体"><span class="nav-number">3.</span> <span class="nav-text">创建斜体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建斜体-1"><span class="nav-number">3.1.</span> <span class="nav-text">创建斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#取消斜体"><span class="nav-number">3.2.</span> <span class="nav-text">取消斜体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用粗体格式"><span class="nav-number">4.</span> <span class="nav-text">应用粗体格式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用粗体格式-1"><span class="nav-number">4.1.</span> <span class="nav-text">应用粗体格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#取消粗体"><span class="nav-number">4.2.</span> <span class="nav-text">取消粗体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置字体的大小"><span class="nav-number">5.</span> <span class="nav-text">设置字体的大小</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解em和百分数字体大小"><span class="nav-number">5.1.</span> <span class="nav-text">理解em和百分数字体大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用rem设置字体大小"><span class="nav-number">5.2.</span> <span class="nav-text">使用rem设置字体大小</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指定行高"><span class="nav-number">6.</span> <span class="nav-text">指定行高</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置行高的步骤："><span class="nav-number">6.1.</span> <span class="nav-text">设置行高的步骤：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#同时设置所有字体值"><span class="nav-number">7.</span> <span class="nav-text">同时设置所有字体值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置颜色"><span class="nav-number">8.</span> <span class="nav-text">设置颜色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置背景"><span class="nav-number">9.</span> <span class="nav-text">设置背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改文本的背景颜色"><span class="nav-number">9.1.</span> <span class="nav-text">修改文本的背景颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用背景图像作为背景"><span class="nav-number">9.2.</span> <span class="nav-text">使用背景图像作为背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复背景图像"><span class="nav-number">9.3.</span> <span class="nav-text">重复背景图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#控制背景图像是否随页面滚动"><span class="nav-number">9.4.</span> <span class="nav-text">控制背景图像是否随页面滚动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指定元素背景图像的位置"><span class="nav-number">9.5.</span> <span class="nav-text">指定元素背景图像的位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在一条声明中设置所有背景属性"><span class="nav-number">9.6.</span> <span class="nav-text">在一条声明中设置所有背景属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#控制间距"><span class="nav-number">10.</span> <span class="nav-text">控制间距</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定字间距"><span class="nav-number">10.1.</span> <span class="nav-text">指定字间距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指定字偶距"><span class="nav-number">10.2.</span> <span class="nav-text">指定字偶距</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#增加缩进"><span class="nav-number">11.</span> <span class="nav-text">增加缩进</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#增加缩进的方法"><span class="nav-number">11.1.</span> <span class="nav-text">增加缩进的方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对齐文本"><span class="nav-number">12.</span> <span class="nav-text">对齐文本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改文本的大小写"><span class="nav-number">13.</span> <span class="nav-text">修改文本的大小写</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用小型大写字母"><span class="nav-number">14.</span> <span class="nav-text">使用小型大写字母</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用小型大写字母的方法"><span class="nav-number">14.1.</span> <span class="nav-text">使用小型大写字母的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#取消小型大写字母的方法"><span class="nav-number">14.2.</span> <span class="nav-text">取消小型大写字母的方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#装饰文本"><span class="nav-number">15.</span> <span class="nav-text">装饰文本</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#值"><span class="nav-number">15.1.</span> <span class="nav-text">值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置空白属性"><span class="nav-number">16.</span> <span class="nav-text">设置空白属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#值-1"><span class="nav-number">16.1.</span> <span class="nav-text">值</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">燕子</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">8k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">7 分钟</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.2.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<script>
+  window.livereOptions = {
+    refer: '2019/08/03/为文本添加样式/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":200,"height":400,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false},"react":{"opacity":0.7},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
