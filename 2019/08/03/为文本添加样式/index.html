@@ -507,7 +507,7 @@
 <hr>
 <h1 id="选择字体系列"><a href="#选择字体系列" class="headerlink" title="选择字体系列"></a><u>选择字体系列</u></h1><p>如何定义单个字体？</p>
 <h2 id="设置字体的方法"><a href="#设置字体的方法" class="headerlink" title="设置字体的方法"></a>设置字体的方法</h2><pre><code>font-family:name;</code></pre><p><code>font-family</code>属性是继承的，但是有几个元素不会继承元素的字体设置，其中有表单的<code>select</code>、<code>textarea</code>和<code>input</code>元素。不过，可以强制它们继承父元素的字体设置，代码为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">input，select，textarea&#123;</span><br><span class="line">font-family:inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span>，<span class="selector-tag">select</span>，<span class="selector-tag">textarea</span>&#123;</span><br><span class="line"><span class="attribute">font-family</span>:inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>注意：如果选择了访问者系统中没有的字体，他们的浏览器中就会显示默认字体。（Windows中的默认字体是Times New Roman）</p>
 <hr>
@@ -548,7 +548,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">font-size: 100%;/*16px*/</span><br><span class="line">    font-size: 2em;/*(16*2)px建议使用这个*/</span><br><span class="line">    font-size: 2rem;</span><br></pre></td></tr></table></figure>
 
 <h2 id="理解em和百分数字体大小"><a href="#理解em和百分数字体大小" class="headerlink" title="理解em和百分数字体大小"></a>理解em和百分数字体大小</h2><p>说明:使用这种方法时，最好在body上建立一个基准。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    font-size: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>即大多数系统的默认字体大小。</p>
 <p>确定em的值或（百分比）：</p>
@@ -790,6 +790,10 @@ normal:正常方式处理空格。</code></pre>
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/08/05/用CSS进行布局/" rel="prev" title="用CSS进行布局">
+                用CSS进行布局 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -865,7 +869,7 @@ normal:正常方式处理空格。</code></pre>
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -886,7 +890,9 @@ normal:正常方式处理空格。</code></pre>
         
           
         
-        <span class="site-state-item-count">2</span>
+          
+        
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -907,7 +913,11 @@ normal:正常方式处理空格。</code></pre>
         
           
         
-        <span class="site-state-item-count">2</span>
+          
+        
+          
+        
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -1009,7 +1019,7 @@ normal:正常方式处理空格。</code></pre>
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">8k</span>
+    <span title="站点总字数">13k</span>
   
 
   
@@ -1020,7 +1030,7 @@ normal:正常方式处理空格。</code></pre>
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">7 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
   
 </div>
 
